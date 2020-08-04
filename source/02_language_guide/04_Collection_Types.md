@@ -432,7 +432,7 @@ oddDigits.symmetricDifference(singleDigitPrimeNumbers).sorted()
 * 使用“是否相等”运算符（`==`）来判断两个集合包含的值是否全部相同。
 * 使用 `isSubset(of:)` 方法来判断一个集合中的所有值是否也被包含在另外一个集合中。
 * 使用 `isSuperset(of:)` 方法来判断一个集合是否包含另一个集合中所有的值。
-* 使用 `isStrictSubset(of:)` 或者 `isStrictSuperset(of:)` 方法来判断一个集合是否是另外一个集合的子集或者超集并且两个集合并不相等。
+* 使用 `isStrictSubset(of:)` 或者 `isStrictSuperset(of:)` 方法来判断一个集合是否是另外一个集合的严格子集（真子集）或者严格超集（真超集），其与非严格集合的区别是严格集合去除了集合相等的情形。
 * 使用 `isDisjoint(with:)` 方法来判断两个集合是否不含有相同的值（是否没有交集）。
 
 ```swift
