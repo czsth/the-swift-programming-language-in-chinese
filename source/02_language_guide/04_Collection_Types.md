@@ -425,14 +425,14 @@ oddDigits.symmetricDifference(singleDigitPrimeNumbers).sorted()
 
 ### 集合成员关系和相等 {#set-membership-and-equality}
 
-下面的插图描述了三个集合 `a`、`b` 和 `c`，以及通过重叠区域表述集合间共享的元素。集合 `a` 是集合 `b` 的*父集合*，因为 `a` 包含了 `b` 中所有的元素。相反的，集合 `b` 是集合 `a` 的*子集合*，因为属于 `b` 的元素也被 `a` 包含。集合 `b` 和集合 `c` 是*不相交*的，因为它们之间没有共同的元素。
+下面的插图描述了三个集合 `a`、`b` 和 `c`，以及通过重叠区域表述集合间共享的元素。集合 `a` 是集合 `b` 的*超集*，因为 `a` 包含了 `b` 中所有的元素。相反的，集合 `b` 是集合 `a` 的*子集*，因为属于 `b` 的元素也被 `a` 包含。集合 `b` 和集合 `c` 是*不相交*的，因为它们之间没有共同的元素。
 
 ![](https://docs.swift.org/swift-book/_images/setEulerDiagram_2x.png)
 
 * 使用“是否相等”运算符（`==`）来判断两个集合包含的值是否全部相同。
 * 使用 `isSubset(of:)` 方法来判断一个集合中的所有值是否也被包含在另外一个集合中。
 * 使用 `isSuperset(of:)` 方法来判断一个集合是否包含另一个集合中所有的值。
-* 使用 `isStrictSubset(of:)` 或者 `isStrictSuperset(of:)` 方法来判断一个集合是否是另外一个集合的子集合或者父集合并且两个集合并不相等。
+* 使用 `isStrictSubset(of:)` 或者 `isStrictSuperset(of:)` 方法来判断一个集合是否是另外一个集合的子集或者超集并且两个集合并不相等。
 * 使用 `isDisjoint(with:)` 方法来判断两个集合是否不含有相同的值（是否没有交集）。
 
 ```swift
